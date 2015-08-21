@@ -31,7 +31,7 @@ public class CustomerController {
 		return "redirect:/customer";
 
 	}
-
+	
 	@RequestMapping(value = "/customer")
 	public String listCustomers(Model model) {
 		model.addAttribute("customers", customerService.getAllCustomers());
